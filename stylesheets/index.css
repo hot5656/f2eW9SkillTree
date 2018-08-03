@@ -1,0 +1,917 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, ../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 32, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 45, ../sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 56, ../sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 68, ../sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 77, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 87, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 97, ../sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 108, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 117, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 125, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 129, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 140, ../sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 152, ../sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 168, ../sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 178, ../sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 187, ../sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 198, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 210, ../sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 221, ../sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 232, ../sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 245, ../sass/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 253, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 262, ../sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 272, ../sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 282, ../sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 291, ../sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 300, ../sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 312, ../sass/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 320, ../sass/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 331, ../sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 339, ../sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 10, ../sass/index.scss */
+body {
+  color: white;
+  font-family: 'Roboto';
+  margin: 0;
+  font-size: 16px;
+  background: -webkit-linear-gradient(#10030A, #2E1838);
+  background: -o-linear-gradient(#10030A, #2E1838);
+  background: linear-gradient(#10030A, #2E1838);
+}
+
+/* line 20, ../sass/index.scss */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+/* line 24, ../sass/index.scss */
+.wrap {
+  position: relative;
+  width: 100vw;
+  height: 107vw;
+  overflow: hidden;
+}
+/* line 30, ../sass/index.scss */
+.wrap .skill {
+  position: absolute;
+  width: 5.4vw;
+  height: 7.5vw;
+  z-index: 20;
+}
+/* line 36, ../sass/index.scss */
+.wrap .skill img {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0px;
+  width: 5.4vw;
+  height: 5.4vw;
+  background-color: #0C467F;
+  border: 4px solid rgba(92, 92, 92, 0.62);
+  border-radius: 30%;
+  cursor: pointer;
+}
+/* line 49, ../sass/index.scss */
+.wrap .skill h3 {
+  text-align: center;
+  margin-top: 0.2vw;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* line 55, ../sass/index.scss */
+.wrap .skill .path_short {
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  width: 3.5vw;
+  height: 1vw;
+  background-color: #bfbfbf;
+}
+/* line 63, ../sass/index.scss */
+.wrap .skill .arrow_short {
+  position: absolute;
+  top: 24%;
+  left: 160%;
+  border-width: 1vw 0 1vw 1.6vw;
+  border-style: solid;
+  border-color: transparent transparent transparent #bfbfbf;
+}
+/* line 71, ../sass/index.scss */
+.wrap .skill .path_short_left_in {
+  position: absolute;
+  top: 30%;
+  left: -73%;
+  width: 3vw;
+  height: 1vw;
+  background-color: #bfbfbf;
+}
+/* line 79, ../sass/index.scss */
+.wrap .skill .arrow_short_left_in {
+  position: absolute;
+  top: 24%;
+  left: -27%;
+  border-width: 1vw 0 1vw 1.6vw;
+  border-style: solid;
+  border-color: transparent transparent transparent #bfbfbf;
+}
+/* line 87, ../sass/index.scss */
+.wrap .skill .arrow_short_left_in_before {
+  position: absolute;
+  top: 24%;
+  left: -27%;
+  border-width: 1vw 0 1vw 1.6vw;
+  border-style: solid;
+  border-color: transparent transparent transparent #bfbfbf;
+}
+/* line 95, ../sass/index.scss */
+.wrap .skill .path_middle_left_in_before {
+  position: absolute;
+  top: 30%;
+  left: -120%;
+  width: 5.2vw;
+  height: 1vw;
+  background-color: #bfbfbf;
+}
+/* line 103, ../sass/index.scss */
+.wrap .skill .arrow_right_in {
+  position: absolute;
+  top: 24%;
+  left: 100%;
+  border-width: 1vw 1.6vw 1vw 0;
+  border-style: solid;
+  border-color: transparent #bfbfbf transparent transparent;
+}
+/* line 111, ../sass/index.scss */
+.wrap .skill .path_middle {
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  width: 5vw;
+  height: 1vw;
+  background-color: #bfbfbf;
+}
+/* line 119, ../sass/index.scss */
+.wrap .skill .path_middle_step {
+  position: absolute;
+  top: 30%;
+  left: 120%;
+  width: 4vw;
+  height: 1vw;
+  background-color: #bfbfbf;
+}
+/* line 127, ../sass/index.scss */
+.wrap .skill .arrow_middle {
+  position: absolute;
+  top: 24%;
+  left: 190%;
+  border-width: 1vw 0 1vw 1.6vw;
+  border-style: solid;
+  border-color: transparent transparent transparent #bfbfbf;
+}
+/* line 135, ../sass/index.scss */
+.wrap .skill .path_long {
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  width: 7.9vw;
+  height: 1vw;
+  background-color: #bfbfbf;
+}
+/* line 143, ../sass/index.scss */
+.wrap .skill .coloumn_long {
+  position: absolute;
+  top: -115%;
+  left: 146%;
+  width: 1vw;
+  height: 22vw;
+  background-color: #bfbfbf;
+}
+/* line 151, ../sass/index.scss */
+.wrap .skill .coloumn_top {
+  position: absolute;
+  top: -169%;
+  left: 40%;
+  width: 1vw;
+  height: 12.6vw;
+  background-color: #bfbfbf;
+}
+/* line 161, ../sass/index.scss */
+.wrap .active img {
+  border-color: rgba(87, 145, 255, 0.62);
+}
+/* line 166, ../sass/index.scss */
+.wrap .wait_active img {
+  border-color: rgba(255, 255, 255, 0.62);
+}
+/* line 171, ../sass/index.scss */
+.wrap .active_path .path_short {
+  background-color: white;
+}
+/* line 174, ../sass/index.scss */
+.wrap .active_path .arrow_short {
+  border-color: transparent transparent transparent white;
+}
+/* line 177, ../sass/index.scss */
+.wrap .active_path .path_short_left_in {
+  background-color: white;
+}
+/* line 180, ../sass/index.scss */
+.wrap .active_path .arrow_short_left_in {
+  border-color: transparent transparent transparent white;
+}
+/* line 183, ../sass/index.scss */
+.wrap .active_path .arrow_right_in {
+  border-color: transparent white transparent transparent;
+}
+/* line 186, ../sass/index.scss */
+.wrap .active_path .path_middle {
+  background-color: white;
+}
+/* line 189, ../sass/index.scss */
+.wrap .active_path .path_middle_step {
+  background-color: white;
+}
+/* line 192, ../sass/index.scss */
+.wrap .active_path .arrow_middle {
+  border-color: transparent transparent transparent white;
+}
+/* line 195, ../sass/index.scss */
+.wrap .active_path .path_long {
+  background-color: white;
+}
+/* line 198, ../sass/index.scss */
+.wrap .active_path .coloumn_long {
+  background-color: white;
+}
+/* line 201, ../sass/index.scss */
+.wrap .active_path .coloumn_top {
+  background-color: white;
+}
+/* line 206, ../sass/index.scss */
+.wrap .active_path_before .arrow_short_left_in_before {
+  border-color: transparent transparent transparent white;
+}
+/* line 209, ../sass/index.scss */
+.wrap .active_path_before .path_middle_left_in_before {
+  background-color: white;
+}
+/* line 214, ../sass/index.scss */
+.wrap .title {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  width: 100%;
+}
+/* line 219, ../sass/index.scss */
+.wrap .title h1 {
+  font-size: 3rem;
+  margin-left: 10%;
+}
+/* line 223, ../sass/index.scss */
+.wrap .title h2 {
+  font-size: 3rem;
+  margin-left: 10%;
+}
+/* line 227, ../sass/index.scss */
+.wrap .title img {
+  position: absolute;
+  top: -16%;
+  left: -4%;
+  width: 14vw;
+}
+/* line 234, ../sass/index.scss */
+.wrap .guide {
+  position: absolute;
+  left: 3%;
+  bottom: 38%;
+  width: 12vw;
+  z-index: 30;
+}
+/* line 241, ../sass/index.scss */
+.wrap .guard {
+  position: absolute;
+  left: 4%;
+  bottom: 12%;
+  width: 15vw;
+  z-index: 20;
+}
+/* line 248, ../sass/index.scss */
+.wrap .rocket {
+  position: absolute;
+  right: 18%;
+  bottom: 0%;
+  width: 12vw;
+  z-index: 20;
+}
+/* line 255, ../sass/index.scss */
+.wrap .magic {
+  position: absolute;
+  right: 12%;
+  bottom: 39%;
+  z-index: 20;
+}
+/* line 261, ../sass/index.scss */
+.wrap .magic img {
+  display: block;
+  width: 8vw;
+  cursor: pointer;
+}
+/* line 266, ../sass/index.scss */
+.wrap .magic h3 {
+  text-align: center;
+  margin-top: 0.2vw;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* line 273, ../sass/index.scss */
+.wrap .magic_box {
+  position: absolute;
+  top: 74vw;
+  left: 40vw;
+  z-index: 20;
+  display: none;
+}
+/* line 280, ../sass/index.scss */
+.wrap .magic_box img {
+  display: block;
+  width: 8vw;
+}
+/* line 284, ../sass/index.scss */
+.wrap .magic_box h3 {
+  text-align: center;
+  margin-top: 0.2vw;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* line 290, ../sass/index.scss */
+.wrap .magic_box .path_short {
+  position: absolute;
+  top: 30%;
+  left: 98%;
+  width: 4vw;
+  height: 1vw;
+  background-color: white;
+}
+/* line 298, ../sass/index.scss */
+.wrap .magic_box .coloumn_long {
+  position: absolute;
+  top: -20.5%;
+  left: 146%;
+  width: 1vw;
+  height: 13vw;
+  background-color: white;
+}
+/* line 309, ../sass/index.scss */
+.wrap .star {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  font-size: 1rem;
+}
+/* line 315, ../sass/index.scss */
+.wrap .star:after {
+  content: "\02605";
+}
+/* line 318, ../sass/index.scss */
+.wrap .star_4point {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-size: 2rem;
+}
+/* line 324, ../sass/index.scss */
+.wrap .star_4point:after {
+  content: "\02726";
+}
+/* line 327, ../sass/index.scss */
+.wrap .circle {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: white;
+}
+/* line 336, ../sass/index.scss */
+.wrap .circle_point {
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  width: 0.2vw;
+  height: 0.2vw;
+  border-radius: 50%;
+  background-color: white;
+}
+/* line 346, ../sass/index.scss */
+.wrap .description {
+  position: absolute;
+  left: 10%;
+  bottom: 36%;
+  width: 64vw;
+  height: 17vw;
+  border: 4px solid #0093FF;
+  border-radius: 3vw;
+  background-color: white;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2rem;
+  z-index: 20;
+}
+/* line 359, ../sass/index.scss */
+.wrap .description h3 {
+  color: black;
+  font-weight: bold;
+  margin-left: 22%;
+  margin-top: 4%;
+}
+/* line 365, ../sass/index.scss */
+.wrap .description p {
+  color: #7B7B7B;
+  margin-left: 22%;
+  margin-top: 2%;
+  width: 72%;
+}
+/* line 371, ../sass/index.scss */
+.wrap .description img {
+  position: absolute;
+  top: 16%;
+  left: 7%;
+  width: 8vw;
+}
+/* line 377, ../sass/index.scss */
+.wrap .description button {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  background: #8CCEFF;
+  border: 4px solid #5791FF;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  width: 9vw;
+  border-radius: 2vw;
+  cursor: pointer;
+  display: none;
+}
+/* line 392, ../sass/index.scss */
+.wrap .description button:focus {
+  outline: none;
+}
+/* line 397, ../sass/index.scss */
+.wrap .footer {
+  position: absolute;
+  left: 0;
+  bottom: -20.5%;
+}
+/* line 401, ../sass/index.scss */
+.wrap .footer img {
+  width: 100vw;
+}
+/* line 407, ../sass/index.scss */
+.wrap #s01 {
+  top: 17.3vw;
+  left: 4vw;
+}
+/* line 411, ../sass/index.scss */
+.wrap #s02 {
+  top: 17.3vw;
+  left: 14.1vw;
+}
+/* line 415, ../sass/index.scss */
+.wrap #s03 {
+  top: 32.2vw;
+  left: 4vw;
+}
+/* line 419, ../sass/index.scss */
+.wrap #s04 {
+  top: 32.2vw;
+  left: 14.1vw;
+}
+/* line 423, ../sass/index.scss */
+.wrap #s05 {
+  top: 32.2vw;
+  left: 24.3vw;
+}
+/* line 427, ../sass/index.scss */
+.wrap #s06 {
+  top: 24.4vw;
+  left: 33.7vw;
+}
+/* line 431, ../sass/index.scss */
+.wrap #s07 {
+  top: 13.2vw;
+  left: 45.5vw;
+}
+/* line 435, ../sass/index.scss */
+.wrap #s08 {
+  top: 24.4vw;
+  left: 45.5vw;
+}
+/* line 439, ../sass/index.scss */
+.wrap #s09 {
+  top: 35.1vw;
+  left: 45.5vw;
+}
+/* line 444, ../sass/index.scss */
+.wrap #s11 {
+  top: 13.2vw;
+  left: 52.1vw;
+}
+/* line 448, ../sass/index.scss */
+.wrap #s12 {
+  top: 24.4vw;
+  left: 52.1vw;
+}
+/* line 452, ../sass/index.scss */
+.wrap #s13 {
+  top: 35.1vw;
+  left: 52.1vw;
+}
+/* line 456, ../sass/index.scss */
+.wrap #s14 {
+  top: 24.4vw;
+  left: 64vw;
+}
+/* line 460, ../sass/index.scss */
+.wrap #s15 {
+  top: 13.2vw;
+  left: 74.2vw;
+}
+/* line 464, ../sass/index.scss */
+.wrap #s16 {
+  top: 24.4vw;
+  left: 74.2vw;
+}
+/* line 468, ../sass/index.scss */
+.wrap #s17 {
+  top: 35.1vw;
+  left: 74.2vw;
+}
+/* line 472, ../sass/index.scss */
+.wrap #s18 {
+  top: 13.2vw;
+  left: 86.1vw;
+}
+/* line 476, ../sass/index.scss */
+.wrap #s19 {
+  top: 24.4vw;
+  left: 86.1vw;
+}
+/* line 480, ../sass/index.scss */
+.wrap #s20 {
+  top: 35.1vw;
+  left: 86.1vw;
+}
+/* line 485, ../sass/index.scss */
+.wrap #s21 {
+  top: 70vw;
+  left: 59vw;
+  display: none;
+}
+/* line 490, ../sass/index.scss */
+.wrap #s21 h3 {
+  width: 8vw;
+  text-align: left;
+}
+/* line 495, ../sass/index.scss */
+.wrap #s22 {
+  top: 82vw;
+  left: 59vw;
+  display: none;
+}
